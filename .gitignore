@@ -1,0 +1,6 @@
+# ignore ZIP and PNG style guide files
+*.zip
+Electric-Select-home.png
+Electric-Select-Mobile.png
+styleguide.png
+.DS-Store
