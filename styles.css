@@ -6,12 +6,19 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* Colours Used In This Website
+Marine #042259
+Water Blue #1D81CC
+Pale Rose #F5C8CF
+Pale Grey #F0F5FF
+Light Pink #FCDDE2
+Darker Grey #1F2022
+*/
+
 /* ALL OF THE BELOW IS FROM THE BEARS WEBSITE PROJECT FROM WEEK 1/DAY 2 */
 /* Adding in our fonts and root sizing */
 html {
     font-family: 'Emblema One', cursive;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Catamaran', sans-serif;
     font-size: 125%;    /* default font size ~20px */
 }
 
@@ -53,6 +60,10 @@ h1 span {
     display: block;
 }
 
+p {
+    font-family: 'Barlow', sans-serif;
+}
+
 /* Targeting navigation/buttons */
 nav ul {
     display: flex;
@@ -63,6 +74,7 @@ nav li:first-child {
 }
 
 nav a {
+    font-family: 'Catamaran', sans-serif;
     display: inline-block;
     width: 100%;
     font-size: 1.75rem;
