@@ -6,7 +6,9 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* Colours Used In This Website
+/*****************************/
+/* Colours Used In This Website */
+/*****************************
 Marine #042259
 Water Blue #1D81CC
 Pale Rose #F5C8CF
@@ -15,7 +17,7 @@ Light Pink #FCDDE2
 Darker Grey #1F2022
 */
 
-/* ALL OF THE BELOW IS FROM THE BEARS WEBSITE PROJECT FROM WEEK 1/DAY 2 */
+
 /* Adding in our fonts and root sizing */
 html {
     font-family: 'Emblema One', cursive;
@@ -41,7 +43,9 @@ a:visited {
     color: inherit !important;
 }
 
+/*****************************/
 /* Styling header element */
+/*****************************/
 header {
     height: 100vh;
     padding: 10px 0;
@@ -89,7 +93,9 @@ header p {
     margin: 0;
 }
 
+/*****************************/
 /* Targeting navigation/buttons */
+/*****************************/
 nav ul {
     color: #042259;
     position: relative;
@@ -98,10 +104,6 @@ nav ul {
     display: flex;
     justify-content: right;
 }
-
-/*nav li:first-child {
-    margin-right: 20px;
-}*/
 
 nav a {
     font-family: 'Catamaran', sans-serif;
@@ -114,7 +116,9 @@ nav a {
     text-align: center;
 }
 
+/*****************************/
 /* Targeting social media icons/links */
+/*****************************/
 .social-media {
     color: #1D81CC;
     position: absolute;
@@ -131,14 +135,29 @@ nav a {
     margin: 0px;
 }
 
+/*****************************/
 /* Styling the blog section */
+/*****************************/
 .blog {
+    padding: 20px 0px;
+    margin: 0px;
     background-color: #FCDDE2;
 }
 
-.gallery h2 {
+.blog h2 {
+    color: #1D81CC;
+    text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+}
+
+/*****************************/
+/* Styling the gallery elements */
+/*****************************/
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .gallery ul {
@@ -152,15 +171,50 @@ nav a {
     margin-bottom: 20px;
 }
 
-img {
+.gallery img {
     max-width: 100%;
     display: block;
     height: auto;
 }
 
+.blog-entry {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid grey;
+}
+
+/*****************************/
+/* Styling the Articles */
+/*****************************/
+.articles {
+    padding: 20px 0px;
+    margin: 0px;
+    border: 5px solid red;
+}
+
+.article-stub {
+    display: flex;
+    background: #F0F5FF;
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid grey;
+}
+
+.image-container,
+.text-container {
+    flex-basis: 50%;
+}
+
+.text-container {
+    margin-left: 30px;
+    border: 2px solid green;
+
+/*****************************/
 /* Styling the About section */
+/*****************************/
 section {
-    padding: 100px;
+/*    padding: 100px;*/
 }
 
 .about {
@@ -171,20 +225,13 @@ section {
     display: flex;
 }
 
-.image-container,
-.text-container {
-    flex-basis: 50%;
-}
-
-.image-container {
-    margin-right: 30px;
-}
-
 .about h2 {
     margin-top: 0;
 }
 
+/*****************************/
 /* Styling the footer */
+/*****************************/
 footer {
     background-color: #28323C;
     text-align: center;
@@ -195,7 +242,11 @@ footer p {
     padding: 20px 0;
 }
 
+/*****************************/
+/*****************************/
 /* Media queries */
+/*****************************/
+/*****************************/
 @media (max-width: 768px) {
 
     header .wrapper {
