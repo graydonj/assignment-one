@@ -27,7 +27,6 @@ html {
     width: 90%;
     margin: 0 auto;
     max-width: 1280px;
-    border: 10px solid grey;
 }
 
 /* Styling to remove list dots */
@@ -56,6 +55,7 @@ header {
 header .wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
     border: 4px solid white;
 }
 
@@ -87,6 +87,9 @@ header p {
 
 /* Targeting navigation/buttons */
 nav ul {
+    position: relative;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: right;
     border: 2px solid green;
@@ -102,17 +105,26 @@ nav a {
     width: 100%;
     font-size: 0.9rem;
     color: #042259;
-    padding: 0px 20px;
+    padding: 0px 10px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
 }
 
 /* Targeting social media icons/links */
+.social-media {
+    position: absolute;
+    right: -10%;
+    top: 10%;
+}
 .social-media ul {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+}
+
+.social-media li {
+    padding: 20px 0px;
+    margin: 0px;
 }
 
 /* Styling the blog section */
