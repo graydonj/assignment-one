@@ -26,7 +26,8 @@ html {
 .wrapper {
     width: 90%;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1280px;
+    border: 10px solid grey;
 }
 
 /* Styling to remove list dots */
@@ -49,21 +50,29 @@ header {
     background-image: url(./assets/header-group-appliances.png), linear-gradient(to right, #F5C8CF, #FCDDE2);
 
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
 }
 
 header .wrapper {
     display: flex;
     justify-content: space-between;
+    border: 4px solid white;
+}
+
+header .title {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
 }
 
 h1 {
     font-size: 6rem;
+    line-height: 5rem;
     color: #1D81CC;
     text-transform: uppercase;
-    text-align: left;
     margin: 0;
-    border: 1px solid black;
 }
 
 p {
@@ -71,12 +80,16 @@ p {
 }
 
 header p {
-    border: 1px solid blue;
+    font-size: 1.75rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
 }
 
 /* Targeting navigation/buttons */
 nav ul {
     display: flex;
+    justify-content: right;
+    border: 2px solid green;
 }
 
 /*nav li:first-child {
@@ -93,6 +106,13 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* Targeting social media icons/links */
+.social-media ul {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
 }
 
 /* Styling the blog section */
