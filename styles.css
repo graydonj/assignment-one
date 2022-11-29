@@ -225,26 +225,52 @@ h3 {
 }
 
 .articles {
-    padding: 20px 0px;
+    padding: 0px 0px;
     margin: 0px;
 }
 
 .article-stub {
+    width: 100%;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     background: #F0F5FF;
     padding: 0px;
     margin: 0px;
-    border: 5px solid grey;
 }
 
 .image-container,
-.text-container {
+.text-container-left,
+.text-container-right {
     flex-basis: 50%;
 }
 
-.text-container {
-    margin-left: 30px;
-    border: 2px solid green;
+.text-container-left,
+.text-container-right {
+    max-width: 640px;
+    align-self: center;
+}
+
+.text-container-left {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.text-container-right {
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.articles button {
+    background-color: #F5C8CF;
+    color: #042259;
+}
 
 /*****************************/
 /* Styling the About section */
@@ -266,7 +292,7 @@ section {
 }
 
 /*****************************/
-/* Styling the footer */
+/* Styling the footer -- INCOMPLETE */
 /*****************************/
 footer {
     background-color: #28323C;
@@ -280,7 +306,7 @@ footer p {
 
 /*****************************/
 /*****************************/
-/* Media queries */
+/* Media queries -- INCOMPLETE */
 /*****************************/
 /*****************************/
 @media (max-width: 768px) {
